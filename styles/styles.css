@@ -9,6 +9,11 @@
 /*
  {font-family: 'Silkscreen', cursive;}
 */
+footer{
+    overflow-x: hidden;
+}
+
+/*Index.html*/
 
 .logo {
     height: 4rem;
@@ -16,6 +21,7 @@
 }
 
 .Home {
+    overflow-x: hidden;
     background-image: url(https://i.postimg.cc/Z5LLKHRy/Sky-Background.jpg);
     background-size: cover;
     min-height: 86vh;
@@ -24,6 +30,14 @@
 
 .display-2 {
     padding-top: 250px;
+}
+   
+
+#h3 {
+    position: relative;
+    animation: left 5s infinite;
+    animation-direction: alternate; 
+
 }
 
 /* About me*/
@@ -43,10 +57,49 @@
     font-size: x-large;
 }
 
+/*work/skills*/
+
+#workskills {
+    font-family: Babas Neue;
+}
+
+#workskills h2 {
+    text-decoration: underline;
+}
+
+@keyframes left{
+    from{left:0;}
+    to{left: 5%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 720px) {
     #aboutme .col-6{
         width: 100%;
     }
+    .Home {
+        width: 100%;
+    }
+   #workskills .col-6{
+        width: 100%;
+    }
+    
+
 }
     
     
