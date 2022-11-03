@@ -44,6 +44,9 @@ footer{
 
 #aboutme {
     font-family: Babas Neue;
+    background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
+    background-size: cover;
+    min-height: 95vh;
 }
 
 #aboutme img {
@@ -57,13 +60,16 @@ footer{
     font-size: x-large;
 }
 
-/*work/skills*/
+/*resume*/
 
-#workskills {
+#resume {
     font-family: Babas Neue;
+    background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
+    background-size: cover;
+    min-height: 95vh;
 }
 
-#workskills h2 {
+#resume h2 {
     text-decoration: underline;
 }
 
@@ -72,40 +78,129 @@ footer{
     to{left: 5%;}
 }
 
+/*Testimonials*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 720px) {
-    #aboutme .col-6{
-        width: 100%;
-    }
-    .Home {
-        width: 100%;
-    }
-   #workskills .col-6{
-        width: 100%;
-    }
-    
-
+#testimonial{
+    font-family: Babas Neue;
+    min-height: 95vh;
+    background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
+    background-size: cover;
 }
+
+#testimonial h2 {
+    text-decoration: underline;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    box-shadow: 7px 7px 7px black;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+      /*Contact*/
+
+  #contact {
+    font-family: Babas Neue;
+    min-height:90vh;
+    background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
+    background-size: cover;
+  }
+
+  #contact h2 {
+    text-decoration: underline;
+  }
+
+  #contact p{
+    font-size: x-large;
+  }
+
+
+  @media screen and (max-width: 720px) {
+      #aboutme .col-6{
+          width: 100%;
+      }
+      .Home {
+          width: 100%;
+         text-align: center;
+      }
+      #resume .col-6{
+          width: 100%;
+      }
+      #testimonial .col-4{
+        width: 100%;
+      }
+
+      #testimonial .col-5{
+        width: 100%;
+      }
+    #testimonial {
+        width: 100%;
+        overflow: hidden;
+    }
+      #contact {
+        width: 100%;
+      }
+      footer {
+        width: 100%;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    
-
-
-
-    
-
-
