@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-/*
- {font-family: 'Silkscreen', cursive;}
-*/
 footer{
     overflow-x: hidden;
 }
@@ -47,6 +44,7 @@ footer{
     background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
     background-size: cover;
     min-height: 95vh;
+    overflow: hidden;
 }
 
 #aboutme img {
@@ -54,6 +52,22 @@ footer{
     height: 75vh;
     object-position: center;
     object-fit: cover;
+}
+
+#aboutme a {
+  display: block;
+  scale: 2;
+  color: white;
+}
+
+.icons {
+  display:flex;
+  justify-content:center;
+  gap: 50px;
+}
+
+i {
+  font-size: x-large;
 }
 
 .col-6 p {
@@ -68,6 +82,7 @@ footer{
     background-size: cover;
     min-height: 95vh;
 }
+
 
 #resume h2 {
     text-decoration: underline;
@@ -106,6 +121,7 @@ footer{
     transition: transform 1.5s;
     transform-style: preserve-3d;
     box-shadow: 7px 7px 7px black;
+    object-fit: cover;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -148,7 +164,25 @@ footer{
     font-size: x-large;
   }
 
+  /*Projects*/
 
+  #projects {
+    font-family: Babas Nueue;
+    background-image: url(https://i.postimg.cc/RVFN6BNc/cool-background-2.png);
+    background-size: cover;
+    min-height: 89vh;
+  }
+
+  #projects p {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .card {
+    height: 25rem;
+  }
+
+  /* Media Querry*/
   @media screen and (max-width: 720px) {
       #aboutme .col-6{
           width: 100%;
@@ -159,20 +193,26 @@ footer{
       }
       #resume .col-6{
           width: 100%;
+          overflow: hidden;
       }
       #testimonial .col-4{
         width: 100%;
       }
-
       #testimonial .col-5{
         width: 100%;
       }
     #testimonial {
         width: 100%;
         overflow: hidden;
-    }
+      }
       #contact {
         width: 100%;
+        overflow: hidden;
+      }
+      #projects {
+        width: 100%;
+        row-gap: 20rem;
+        overflow: hidden;
       }
       footer {
         width: 100%;
