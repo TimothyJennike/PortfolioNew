@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-footer{
-    overflow-x: hidden;
-}
-
 /*Index.html*/
 
 .logo {
@@ -113,6 +109,10 @@ i {
     perspective: 1000px;
   }
   
+  .flip-card-inner img {
+    object-fit: cover;
+  }
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -121,7 +121,6 @@ i {
     transition: transform 1.5s;
     transform-style: preserve-3d;
     box-shadow: 7px 7px 7px black;
-    object-fit: cover;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -164,6 +163,10 @@ i {
     font-size: x-large;
   }
 
+  #contact .btn{
+    margin-left: 320px;
+  }
+
   /*Projects*/
 
   #projects {
@@ -201,18 +204,27 @@ i {
       #testimonial .col-5{
         width: 100%;
       }
+      .flip-card-inner img {
+        width: auto;
+      }
     #testimonial {
         width: 100%;
         overflow: hidden;
       }
       #contact {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
       }
-      #projects {
+      #contact .btn{
+        margin: auto;
+      }
+      #contact .card {
+        height: auto;
+      }
+      #projects{
         width: 100%;
         row-gap: 20rem;
-        overflow: hidden;
+        overflow-x: hidden;
       }
       footer {
         width: 100%;
